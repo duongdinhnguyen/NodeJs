@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        {{> header}} {{!-- Nạp thằng header từ header.handlebars --}}
+        <div class="container">
+            {{{body}}} 
+            {{!-- đọc từ các trang cần hiển thị vào body --}}
+        </div>
+         {{> footer}}{{!-- Nạp thằng footer từ footer.handlebars --}}
+    </div>
+</body>
+</html>
